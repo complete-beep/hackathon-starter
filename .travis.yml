@@ -1,7 +1,6 @@
 language: node_js
 node_js:
   - "8"
-  - "9"
 services: mongodb  
 cache:  
   directories:
@@ -9,6 +8,5 @@ cache:
 sudo: false
 install:
   - npm install
-script:
-  - npm run lint
+script: 
   - npm test
